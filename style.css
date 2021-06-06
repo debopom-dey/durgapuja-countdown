@@ -1,0 +1,20 @@
+.origami{
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(255,40,0,0.5),rgb(255,211,0,0.5));
+    width: 350px;
+    height: 80px;
+    margin: 25px;
+    padding:10px;
+    font-family:fantasy ;
+    border: 2.5px solid#000000;
+    position: absolute;
+    top:42%;
+    left: 35%;
+}
+h3{
+    position: absolute;
+    top:15%;
+    left: 20%;
+}   
+
+

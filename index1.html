@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<link rel ="stylesheet" 
+type="text/css"
+href = "style.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
+<html>
+  <head>
+    <title>countdown</title>
+    <style>
+        *{margin: 0;padding: 0;font-family:'Nunito',sans-serif;font-size: large;color: whitesmoke;}
+        div{display:flex;
+        justify-content: center;
+        align-items: center;
+        size: 2cm;
+        }
+    </style>
+  </head>
+  <body>
+      <img src="sreebhumi_puja.jpg" width="1280" height="720">
+  <div class="origami"><p id="demo">
+    <h3>Durga puja 2021 countdown</h3>
+    <script>
+        var dest=new Date("oct 11,2021 00:00:00").getTime();
+        var x=setInterval(function(){
+        var now= new Date().getTime();
+        var diff= dest-now;
+        
+      
+        var days=Math.floor(diff/(1000*60*60*24));
+        console.log(days);
+        var hrs=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+        console.log(hrs);
+        var mins=Math.floor((diff%(1000*60*60))/(1000*60));
+        console.log(mins);
+        var secs=Math.floor((diff%(1000*60))/1000);
+        console.log(secs);
+        document.getElementById("demo").innerHTML=days+'days:'+hrs+'hours:'+mins+'minutes:'+secs+'seconds'
+    },1000);
+    </script>
+   
+      </p></div>
+  
+  </body>
+</html>
